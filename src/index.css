@@ -1,0 +1,14 @@
+body{
+    background-color: lightslategray;
+    font-family: 'Abril Fatface', serif;
+        font-family: 'DM Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+}
+.everything{
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto;
+   border-radius: 10px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    padding: 30px;
+}

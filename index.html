@@ -15,25 +15,31 @@
     <div class="everything">
     <header>
         
-        <form>
-            <input type="search" placeholder="Enter a city..." required/>
-            <input type="submit" value="Search"/>
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+            <input type="submit" value="Search" class="submit-button"/>
         </form>
+<br/>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-        <h1>
+        <h1 class="weather-app-city">
             city
         </h1>
-        <p>
-            time ,condition
+        <p class="weather-app-details">
+            time 14:30 ,condition
             <br/>
-            humidity-level, wind-speed
+            humidity-level <strong>80%</strong>, wind-speed <strong>23 km/h</strong>
         </p>
         </div>
-        <div>
-        &#x26C5; 12°c 
         </div>
+        <div class="weather-app-temparature-container">
+                <div class="weather-app-emoji">
+        &#x26C5;</div> <div class="weather-app-temparature-icon"> 12</div>
+        <div class="weather-app-temparature-unit">°c</div>
+        </div>
+        <div>
     </main>
     <footer>
 Coded by <a href="https://github.com/ByBillia19" >ByBillia </a> hosted on <a href="https://github.com/ByBillia19/Boso">Github</a> Hosted on <a href="https://boso.netlify.app/"> Netlify</a>"

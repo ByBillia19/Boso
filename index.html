@@ -1,46 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/index.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,300&family=Roboto&display=swap"
-        rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title>Boso</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meteo App</title>
 </head>
+
 <body>
-    <div class="everything">
     <header>
-        
-        <form class="search-form" id="search-form">
-            <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input"/>
-            <input type="submit" value="Search" class="submit-button"/>
+        <form>
+            <input type="search" placeholder="Enter a city.." required />
+            <input type="submit" value="Search" />
         </form>
-<br/>
     </header>
     <main>
-        <div class="weather-app-data">
         <div>
-        <h1 class="weather-app-city" id="city">
-            
-        </h1>
-        <p class="weather-app-details" id="time">
-,<span id="discription"></span> 
-            <br/>
-            humidity-level <strong id="humidity"></strong>, wind-speed <strong id="wind-speed"></strong>
-        </p>
+            <h1>Paris</h1>
+            <p>
+                Tuesday 14:49, scattered clouds
+                <br />
+                Humidity: 66%, Wind: 3.13km/h
+            </p>
         </div>
-        </div>
-        <div class="weather-app-temparature-container">
-                <div class="weather-app-emoji">
-        &#x26C5;</div> <div class="weather-app-temparature-icon" id="temparature"> 12</div>
-        <div class="weather-app-temparature-unit">°c</div>
-        </div>
-        <div>
+        <div>🌤️ 12°C</div>
     </main>
     <footer>
 Coded by <a href="https://github.com/ByBillia19" >ByBillia </a> hosted on <a href="https://github.com/ByBillia19/Boso">Github</a> Hosted on <a href="https://boso.netlify.app/"> Netlify</a>"

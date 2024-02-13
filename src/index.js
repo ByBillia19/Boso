@@ -6,6 +6,8 @@ function refreshWeather (response){
     let discriptionElement=document.querySelector("#discription");
    let humidityElement=document.querySelector("#humidity");
    let windSpeedElement=document.querySelector("#wind-speed");
+    let timeElement=document.querySelector("#time");
+    let date=new Date(response.data.time * 1000);
     
 
     let cityElement=document.querySelector("#city");
@@ -14,7 +16,19 @@ function refreshWeather (response){
     humidityElement.innerHTML='${response.data.temparature.humidity}%';
     temparatureElement.innerHTML=Math.round(temparature);
     windSpeedElement.innerHTML='${response.data.wind.speed}km/h';
+    timeElement.innerHTML=fomatDate(date);
 
+}
+function fomatDate (date) {
+    let minutes=date.getMinutes();
+    let hour=date.getHours();
+    let days= ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+let day= days[date.getDay()];
+if (minutes >10){
+    minutes='0${minutes}';
+}
+return '${days} ${hour}:${minutes}';
 }
 
 function searchCity (city){

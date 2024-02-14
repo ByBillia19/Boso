@@ -1,5 +1,7 @@
-body {
-    background-image: url('clouds.jpg');
+img{
+    src:('clouds.jpg');
+}
+body{
     font-family: "Roboto", sans-serif;
 }
 
